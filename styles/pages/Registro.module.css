@@ -1,0 +1,255 @@
+.Form_tienda{grid-area: tienda;}
+.Form_descripcion{grid-area: descripcion;}
+.Form_telefono{grid-area: telefono;}
+.Form_password{grid-area: password;}
+.Form_fundador{grid-area: fundador;}
+.Form_pagos{grid-area: pagos;}
+.Form_ubicacion{grid-area: ubicacion;}
+.Form_entrega{grid-area: entrega;}
+.Form_reclamos{grid-area: reclamos;}
+
+.GroupForm .Form_logo{
+    grid-area: logo;
+    box-shadow: none;
+}
+
+.Form_categoria{
+    grid-area: categoria;
+    display: grid;
+}
+
+.GroupForm .Form_buttons{
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    box-shadow: none;
+}
+
+.GroupForm .Form_buttons_two{
+    grid-area: buttons;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.GroupForm{
+    display: grid;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.FormOne{
+    grid-template-areas:
+    "tienda tienda"
+    "descripcion descripcion"
+    "logo categoria"
+    "telefono password"
+    "buttons buttons";
+}
+
+.GroupForm > div{
+    background: #fff;
+    border-radius: 2.5px;
+    box-shadow: 0 1px 2px 0 #1f516e3d;
+}
+
+.GroupForm input:focus:invalid,.GroupForm select:focus:invalid{
+    border: solid 1px #FF0000;
+}
+
+.GroupForm input::placeholder{
+    color: rgb(167, 164, 164);
+}
+
+.GroupForm select{
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: solid 1px #ccc;
+    outline: none;
+    background: #fff;
+    font-size: 1.025rem;
+    background-image: url('/icons/arrow-down-black.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.GroupForm input{
+    width: 100%;
+    display: block;
+    padding: 20px;
+    font-size: 1.025rem;
+    background: transparent;
+    border: solid 1px #ccc;
+}
+
+.Form_buttons_two > input,.Form_buttons > input,.Form_buttons_two > button {
+    width: 100%;
+    color: #fff;
+    background: #000;
+    border: none;
+    font-size: 1.1rem;
+    padding: 20px 0;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.Form_telefono{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    column-gap: 20px;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 1.025rem;
+    color: var(--link-color);
+    border: solid 1px none;
+}
+
+.Form_telefono > input{
+    padding: 20px;
+    font-size: 1.025rem;
+    color: var(--link-color);
+    border: solid 1px #ccc;
+}
+
+.FormTwo{
+    grid-template-areas:
+    "fundador fundador"
+    "pagos pagos"
+    "entrega entrega"
+    "ubicacion reclamos"
+    "buttons buttons";
+}
+
+
+
+/* ============================ */
+
+.LoadPage{
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+}
+
+.LoadPage span{
+    max-width: 70%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* ======================================== */
+
+
+@media only screen and (max-width: 768px){
+
+    .GroupForm{
+        width: 94%;
+        margin: auto;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+
+    .FormOne{
+        grid-template-areas:
+        "tienda tienda"
+        "descripcion descripcion"
+        "logo categoria"
+        "telefono telefono"
+        "password password"
+        "buttons buttons";
+    }
+
+    .FormTwo{
+        grid-template-areas:
+        "fundador fundador"
+        "pagos pagos"
+        "entrega entrega"
+        "ubicacion ubicacion"
+        "reclamos reclamos"
+        "buttons buttons";
+    }
+
+    .GroupForm > div{
+        box-shadow: none;
+    }
+
+    .GroupForm input{
+        padding: 15px;
+        font-size: 1.025rem;
+        border: solid 1.5px #ccc;
+    }
+
+    .GroupForm input:focus:invalid,.GroupForm select:focus:invalid{
+        border: solid 1.5px #FF0000;
+    }
+
+    .Form_categoria{
+        width: 100%;
+        display: grid;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .GroupForm select{
+        padding: 0 13.5px;
+        font-size: 15.5px;
+        background-image: none;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .GroupForm .Form_buttons_two{
+        grid-gap: 30px;
+    }
+
+    .Form_buttons_two > button,.Form_buttons_two > input,.Form_buttons > input{
+        padding: 15px 0;
+        font-size: 1.050rem;
+        margin-top: 10px;
+    }
+
+    .Form_telefono{
+        column-gap: 15px;
+        padding-left: 15px;
+    }
+
+    .Form_telefono > input{
+        padding: 15px;
+        border: solid 1.5px #ccc;
+    }
+
+    .GroupForm .Form_logo{
+        display: grid;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    /* ======================= */
+
+    .LoadPage{
+        row-gap: 30px;
+    }
+
+    .LoadPage img{
+        width: 250px;
+    }
+    
+    .LoadPage span{
+        max-width: 90%;
+        font-size: 1.3rem;
+    }
+}

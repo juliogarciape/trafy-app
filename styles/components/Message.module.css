@@ -1,0 +1,23 @@
+.Message{
+    display: grid;
+    background-color: #E3E6F2;
+    padding: 15px;
+}
+
+.Message p{
+    text-align: center;
+    font-size: 15px;
+    color: #1c1e21;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .Message{
+        padding: 13.5px 15px;
+    }
+
+    .Message p{
+        font-size: 14px;
+    }
+}

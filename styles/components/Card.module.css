@@ -1,0 +1,199 @@
+.Main{
+    display: grid;
+    row-gap: 40px;
+    padding: 40px 0;
+}
+
+.Main_card{
+    width: 96%;
+    margin: auto;
+    display: grid;
+    row-gap: 25px;
+    padding: 25px 40px;
+    outline: 0.0625rem solid #0000;
+    box-shadow: 0 0 5px rgba(23, 24, 24, 0.05), 0 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.Main_card__black{
+    background: #000;
+    color: #fff;
+}
+
+.Main_card__white{
+    background: #fff;
+    color: #000;
+}
+
+.Main_head{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main_head img{
+    width: 25px;
+}
+
+.Main_head span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Main_body{
+    background: transparent;
+}
+
+.Main_body p, .Main_body li, .Main_body a{
+    font-size: 15px;
+}
+
+.Main_body a{
+    color: var(--link-color);
+}
+
+/*=======================================*/
+
+.Main_body__home p{
+    font-weight: bold;
+    font-size: 1.050rem;
+    margin-bottom: 20px;
+}
+
+.Main_body__home > div{
+    display: grid;
+    row-gap: 15px;
+}
+
+.Main_body__home > div > a{
+    background: #fff;
+    padding: 13.5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main_body__home > div span{
+    color: #000;
+    font-size: 15px;
+}
+
+.Main_body__home > div img{
+    vertical-align: middle;
+}
+
+.Main_body__advisory p, .Main_body__share p{
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    font-size: 1.050rem;
+}
+
+/*=======================================*/
+
+.Main_buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    column-gap: 40px;
+}
+
+.Main_buttons button, .Main_buttons a{
+    padding: 10px 15px;
+    width: fit-content;
+    font-size: 15px;
+    border-radius: 2.5px;
+    user-select: none;
+}
+
+.Button__white{
+    background: #fff;
+    color: #000;
+}
+
+.Button__black{
+    background: #000;
+    color: #fff;
+}
+
+.Button__grey{
+    background: #fff;
+    color: #000;
+    border: 1px solid rgba(186, 191, 195, 1);
+}
+
+.Button__outline{
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+
+/*==============================================*/
+
+
+@media only screen and (max-width: 768px){
+
+    .Main{
+        row-gap: 30px;
+        padding: 25px 0;
+    }
+
+    .Main_card{
+        width: 100%;
+        border-radius: 0;
+        padding: 20px 15px;
+        row-gap: 25px;
+    }
+    
+    .Main_head{
+        column-gap: 20px;
+    }
+
+    .Main_head img{
+        width: 20px;
+    }
+
+    .Main_head span{
+        font-size: 1.050rem;
+        font-weight: bold;
+        text-align: end;
+    }
+
+    .Main_body{
+        background: transparent;
+    }
+
+    .Main_buttons{
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    .Main_body li, .Main_body a, .Main_body p{
+        font-size: 14.5px;
+    }
+
+    /*=============================*/
+
+    .Main_body__home > div{
+        row-gap: 12.5px;
+    }
+    
+    .Main_body__home > div > a{
+        padding: 15px 10px;
+    }
+
+    .Main_body__home > div span{
+        font-size: 14px;
+    }
+
+    .Main_body__home p{
+        font-size: 15px;
+    }
+    
+    .Main_body__home p,.Main_body__advisory p, .Main_body__share p{
+        max-width: 100%;
+        text-align: center;
+    }
+}

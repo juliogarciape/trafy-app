@@ -1,0 +1,48 @@
+.Connection{
+    margin-top: 80px;
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
+}
+
+.Connection img{
+    background: #E4E6EB;
+    border-radius: 50%;
+}
+
+.Connection span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Connection button{
+    background: #E4E6EB;
+    border: solid 1px #ccc;
+    color: #1c1e21;
+    padding: 15px 70px;
+    border-radius: 4.5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px){
+            
+    .Connection{
+        margin-top: 70px;
+    }
+    
+    .Connection img{
+        width: 130px;
+    }
+    
+    .Connection span{
+        font-size: 1.5rem;
+    }
+
+    .Connection button{
+        padding: 12px 40px;
+    }
+    
+}

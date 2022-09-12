@@ -1,0 +1,52 @@
+# TODO TRAFY STORE
+
+## PRODUCCIÓN:
+
++ https://trafy.store/perfil/
++ https://trafy.store/
++ https://trafy.store/login/
++ https://trafy.store/creditos/
++ https://trafy.store/404/
++ https://trafy.store/faq/
++ https://trafy.store/mantenimiento/
++ https://trafy.store/edit/1/
++ https://trafy.store/registro/
++ https://trafy.store/finanzas/
++ https://trafy.store/configuracion/
++ https://trafy.store/inicio/
++ https://trafy.store/pedidos/
++ https://trafy.store/personalizar/
++ https://trafy.store/nuevo/ -> ver promise y error de stock 0
+
+## DESARROLLO:
+
++ Arreglar la fecha porque se adelante 1 dia
++ Detectar cuando se presiona el botón salir
++ Animacion del modal
+
+
+
+
++ crear api de url en registro para saber si está duplicado
++ crear una api que traiga solo la url
++ crear una api que solo actualize url_tienda en tienda
+
+
+
+
+
+
+
+
++ Permitir click afuera para cerrar el dropdown
++ Precios con descuento
++ Crear boletas,facturas de compra personalizados (incluir aviso)
++ https://trafy.store/politicas-privacidad/ -> css
++ https://trafy.store/terminos-condiciones/ -> css
++ EDITAR IMAGENES
++ https://platzi.com/onboarding/?next=/inicio
+
+## MEJORAS A FUTURO:
+
++ poner [] en respuesta api del perfil
++ MEJORAR EL OG:IMAGE DE TRAFY STORE

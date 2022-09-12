@@ -1,0 +1,156 @@
+.Entregas{
+    width: 96%;
+    display: grid;
+    row-gap: 40px;
+    margin: auto;
+}
+
+.Entregas > div{
+    background: #fff;
+}
+
+.Entrega_body{
+    padding: 30px 20px;
+}
+
+.Entrega_body > form{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin: auto;
+}
+
+.Entrega_body input,.Entrega_body select{
+    width: 100%;
+    padding: 15px;
+    border: solid 1px #ccc;
+    border-radius: 2.5px;
+    box-shadow: 0 1px 2px 0 #1f516e3d;
+    font-size: 1.025rem;
+    background: #fff;
+}
+
+.Entrega_producto{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+}
+
+.Entrega_body select{
+    background-image: url('/icons/arrow-down-black.png');
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.Entrega_body input[type="submit"]{
+    background: var(--yellow-button);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-top: 20px;
+    box-shadow: none;
+    border: none;
+    padding: 20px;
+}
+
+.Entrega_historial{
+    padding: 30px 20px;
+}
+
+.Entrega_historial > div:nth-child(2n+1){
+    background: #e5ecf46b;
+}
+
+.Entrega_historial > div{
+    padding: 17.5px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.Entrega_historial span:first-child{
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 1.050rem;
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+    .Entregas{
+        width: 100%;
+        row-gap: 30px;
+    }
+    
+    .Entrega_body{
+        padding: 25px 10px;
+    }
+
+    .Entrega_body > form{
+        row-gap: 15px;
+    }
+    
+    .Entrega_body input,.Entrega_body select{
+        padding: 15px 10px;
+        border-radius: 0;
+        box-shadow: 0 1px 2px 0 #1f516e2e;
+        font-size: 1.025rem;
+    }
+    
+    .Entrega_producto{
+        row-gap: 15px;
+        grid-template-columns: 1fr;
+    }
+    
+    .Entrega_body select{
+        background-size: 10px;
+        background-position: 95% center;
+    }
+    
+    .Entrega_body input[type="submit"]{
+        font-size: 1.050rem;
+        margin-top: 10px;
+        padding: 15px 0;
+        letter-spacing: 0;
+        border-radius: 0;
+    }
+    
+    .Entrega_historial{padding: 0;}
+
+    .Entrega_historial > div{
+        padding: 20px 15px;
+        row-gap: 20px;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "stock fecha"
+        "tipo tipo";
+        justify-items: stretch;
+        align-items: center;
+    }
+    
+    .Entrega_historial span:first-child{
+        font-size: 1rem;
+        line-height: 1;
+        grid-area: stock;
+        font-weight: normal;
+    }
+
+    .Entrega_historial span:nth-child(2){
+        grid-area: tipo;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .Entrega_historial span:last-child{
+        grid-area: fecha;
+        font-size: 15px;
+        text-align: end;
+    }
+}

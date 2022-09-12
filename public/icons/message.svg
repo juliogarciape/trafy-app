@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>message-svg</title>
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="s0" d="m0 123.5h367.4v270h-193.9l-109.2 99v-99h-64.3zm272.1 152h-176.7v30h176.7zm-208.9-34h241v-30h-241z"/>
+			<path id="Layer" class="s0" d="m512 19.5v270h-56.2v99l-58.2-52.8v-242.2h-253v-74z"/>
+		</g>
+	</g>
+</svg>

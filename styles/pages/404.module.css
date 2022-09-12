@@ -1,0 +1,62 @@
+.ErrorContainer{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    background: url('/textures/points.png'), #000;
+}
+
+.ErrorContainer_error{
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    padding: 25px 0;
+}
+
+.ErrorContainer_error h2{
+    font-size: 2.3em;
+    margin-bottom: 5px;
+}
+
+.ErrorContainer_error p{
+    font-size: 1em;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .ErrorContainer{
+        display: block;
+        padding-top: 50px;
+    }
+
+    .ErrorContainer_image{
+        margin-bottom: 50px;
+    }
+    
+    .ErrorContainer_image > img{
+        width: 180px;
+        display: block;
+        margin: auto;
+    }
+    
+    .ErrorContainer_error{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    
+    .ErrorContainer_error h2{
+        font-size: 2.5rem;
+    }
+    
+    .ErrorContainer_error p{
+        font-size: 1rem;
+    }
+}

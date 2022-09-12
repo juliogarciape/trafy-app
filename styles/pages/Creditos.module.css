@@ -1,0 +1,62 @@
+.ContainerCreds{
+    width: 96%;
+    margin: 30px auto;
+}
+
+.ContainerCreds a{
+    color: var(--link-color);
+}
+
+.ContainerCreds > div{
+    padding-top: 20px;
+}
+
+.ContainerCreds li{
+    list-style: none;
+    position: relative;
+    padding: 10px 0;
+    padding-left: 30px;
+    margin: 12px 0;
+}
+
+.ContainerCreds li:nth-child(2n+1){
+    background: #f2f6f9;
+}
+
+.ContainerCreds li::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    .ContainerCreds{
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .ContainerCreds > div{
+        padding: 10px 0;
+    }
+    
+    .ContainerCreds li{
+        font-size: .9em;
+    }
+    
+    .ContainerCreds li::before{
+        width: 5px;
+    }
+
+    .ContainerCreds h3{
+        font-size: 1rem;
+    }
+
+}

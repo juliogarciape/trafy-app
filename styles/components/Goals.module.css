@@ -1,0 +1,43 @@
+.Goal{
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+}
+
+.Goal span{
+    font-size: 1.350rem;
+    text-align: center;
+}
+
+.Goal a{
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    width: 30%;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .Goal{
+        row-gap: 15px;
+    }
+    
+    .Goal img{
+        width: 150px;
+    }
+        
+    .Goal span{
+        max-width: 90%;
+        font-size: 1.025rem;
+    }
+    
+    .Goal a{
+        width: 80%;
+        padding: 10px 0;
+    }
+}

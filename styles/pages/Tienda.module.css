@@ -1,0 +1,324 @@
+.Setup{
+    width: 96%;
+    margin: auto;
+}
+
+.Setup_head{
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Setup_body{
+    background: #fff;
+}
+
+.Setup_url{
+    display: grid;
+    row-gap: 25px;
+    padding: 20px;
+}
+
+.Setup_url > div{
+    background: #EFF3F6;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    justify-items: center;
+    align-items: center;
+    height: 55px;
+}
+
+.Setup_url input{
+    min-width: auto;
+    background: #EFF3F6;
+}
+
+.Setup_url span, .Setup_url input{
+    font-size: 1.3rem;
+    color: var(--link-color);
+}
+
+.Setup_url button{
+    width: 100%;
+    background: #000;
+    font-size: 1rem;
+    display: block;
+    align-self: stretch;
+    text-align: center;
+    color: #fff;
+}
+
+.Setup_url p{
+    font-size: 1.050rem;
+    text-align: center;
+    color: #000;
+}
+
+.Setup_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.Setup_links a{
+    display: block;
+    width: fit-content;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: #000;
+    border-radius: 2.5px;
+    border: solid 1px #000;
+}
+
+/* ================================ */
+
+.Setup_body > form{
+    padding: 25px 0;
+    display: grid;
+    row-gap: 25px;
+    justify-items: center;
+}
+
+.Setup_body form > div{
+    width: 96%;
+}
+
+.Setup_body form input, .Setup_body form select{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    font-size: 1.025rem;
+    background: #fff;
+    border: solid 1px #ccc;
+}
+
+.Setup_body form input:required:valid,.Setup_body form select:required:valid{
+    border: solid 1px #0FE39F;
+}
+
+.Setup_body form input:focus:invalid,.Setup_body form select:focus:invalid{
+    border: solid 1px #FF0000;
+}
+
+.Setup_body form input::placeholder{
+    color: rgb(95,95,95);
+}
+
+.Setup_body form input[type="submit"]{
+    font-weight: bold;
+    padding: 20px 0;
+    background: var(--yellow-button);
+    border: none;
+    font-size: 1.1rem;
+}
+
+/* ======================================== */
+
+.Setup_preferencias{
+    padding: 20px 15px;
+    display: grid;
+    row-gap: 30px;
+    background: #fff;
+}
+
+.Setup_preferencias p{
+    font-size: 1.050rem;
+    text-align: center;
+}
+
+.Setup_themes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Setup_colors{
+    display: grid;
+    justify-items: center;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.Setup_colors span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    line-height: 0;
+}
+
+.Setup_colors span:nth-child(1){background: #000;}
+.Setup_colors span:nth-child(2){background: #067aeb;}
+.Setup_colors span:nth-child(3){background: #ffc300;}
+.Setup_colors span:nth-child(4){background: #ff5a60;}
+.Setup_colors span:nth-child(5){background: #00b382;}
+.Setup_colors span:nth-child(6){background: #9147ff;}
+.Setup_colors span:nth-child(7){background: #ff9900;}
+.Setup_colors span:nth-child(8){background: #e50914;}
+
+.Setup_themes img{
+    filter: grayscale(1);
+}
+
+.Setup_themes span{
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
+    font-size: 1.025rem;
+    letter-spacing: 2px;
+}
+
+.Setup_preferencias button{
+    width: 100%;
+    font-weight: bold;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    background: var(--yellow-button);
+}
+
+
+/* ======================================== */
+
+@media only screen and (max-width: 768px){
+
+    .Setup{
+        width: 100%;
+    }
+
+    .Setup_head{
+        padding: 15px;
+        font-size: 15px;
+    }
+    
+    .Setup_url{
+        row-gap: 20px;
+        padding: 20px 10px;
+    }
+    
+    .Setup_url > div{
+        background: #fff;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        height: auto;
+    }
+    
+    .Setup_url span, .Setup_url input{
+        font-size: 1.2rem;
+        background: #EFF3F6;
+        border: 1px solid #d0d0d0;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .Setup_url button{
+        width: 100%;
+        margin: auto;
+        padding: 15px 0;
+        font-size: 1rem;
+        border: none;
+    }
+    
+    .Setup_url p{
+        font-size: 15px;
+    }
+
+    .Setup_links{
+        display: grid;
+        row-gap: 15px;
+        justify-content: stretch;
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+    
+    .Setup_links a{
+        width: 100%;
+        padding: 13.5px 15px;
+        font-size: 15px;
+        border-radius: 0;
+        border: 1px solid #ccc;
+    }
+
+    .Setup_links a:hover{
+        background: #cccccc50;
+    }
+
+    /* ================================ */
+
+    .Setup_body > form{
+        padding: 25px 0;
+        row-gap: 20px;
+    }
+    
+    .Setup_body form > div{
+        width: 94%;
+    }
+    
+    .Setup_body form input,.Setup_body form select{
+        padding: 15px 10px;
+        font-size: 1rem;
+        border: solid 1.5px #ccc;
+    }
+    
+    .Setup_body form input:required:valid,.Setup_body form select:required:valid{
+        border: solid 1.5px #0FE39F;
+    }
+    
+    .Setup_body form input:focus:invalid,.Setup_body form select:focus:invalid{
+        border: solid 1.5px #FF0000;
+    }
+    
+    .Setup_body form input[type="submit"]{
+        padding: 15px 0;
+        border: none;
+        font-size: 1rem;
+    }
+
+    /*==============================*/
+
+    .Setup_preferencias{
+        padding: 25px 10px;
+        row-gap: 25px;
+    }
+    
+    .Setup_preferencias p{
+        font-size: 1rem;
+    }
+    
+    .Setup_colors{
+        row-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+    
+    .Setup_colors span{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .Setup_themes img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .Setup_themes span{
+        row-gap: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .Setup_preferencias button{
+        padding: 15px 0;
+        border-radius: 0;
+    }
+}

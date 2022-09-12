@@ -1,0 +1,120 @@
+.Profile{
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Profile_card{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Profile_card img{
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.Profile_card h3{
+    font-size: 16.5px;
+    font-weight: normal;
+    color: var(--light-black);
+}
+
+.Profile_plan{
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px #eceaea;
+    padding: 15px 0;
+}
+
+.Profile_plan > h4{
+    font-weight: normal;
+    color: var(--light-black);
+    font-size: 1rem;
+}
+
+/* =============== BOOKSMARKS =============== */
+
+.List{
+    margin-top: 35px;
+}
+
+.List > a{
+    display: flex;
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: solid 1px #eceaea;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.List h4{
+    font-size: 15.5px;
+    font-weight: normal;
+    margin-left: 20px;
+    color: var(--light-black);
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+    .Profile_card{
+        display: grid;
+        padding: 15px;
+        row-gap: 15px;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .Profile_card img{
+        width: 80px;
+        margin-right: 0;
+    }
+    
+    .Profile_card h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .Profile_plan{
+        display: grid;
+        place-items: center;
+        border-top: none;
+        padding: 13.5px 0;
+        background: #000;
+    }
+
+    .Profile_plan .Profile_plan__strong{
+        display: none;
+    }
+    
+    .Profile_plan > h4{
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    
+    /* =============== BOOKSMARKS =============== */
+
+    .List{
+        margin-top: 0;
+    }
+    
+    .List > a{
+        padding: 20px 0;
+        align-items: center;
+        padding-left: 20px;
+    }
+    
+    .List h4{
+        font-size: 15.5px;
+        font-weight: normal;
+        margin-left: 20px;
+    }
+
+}

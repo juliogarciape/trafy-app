@@ -1,0 +1,218 @@
+.Dashboard{
+    width: 96%;
+    display: grid;
+    row-gap: 40px;
+    margin: auto;
+}
+
+.Dashboard > div{
+    background: #fff;
+    border: solid 1px #cccccc50;
+    display: grid;
+}
+
+.Dashboard_body{
+    padding: 30px 20px;
+    background: #fff;
+    display: grid;
+}
+
+.Dashboard_calc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #EFF3F6;
+}
+
+.Dashboard_calc > span{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #0FE39F;
+    font-weight: bold;
+}
+
+.Dashboard_calc > span:first-child{
+    color: #FF0000;
+}
+
+.Dashboard_calc h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.Dashboard_calc p{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.Dashboard_buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Dashboard_buttons button:first-child{
+    color: #FF0000;
+    border: solid 2px #FF0000;
+}
+
+.Dashboard_buttons > button{
+    border: none;
+    border-radius: 20px;
+    border: solid 2px #0FE39F;
+    color: #0FE39F;
+    background: transparent;
+    font-size: 1.050rem;
+    padding: 13.5px 30px;
+    user-select: none;
+}
+
+.Dashboard_history > div:nth-child(2) > div{
+    padding: 17.5px 20px;
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 1fr auto auto auto auto;
+    align-items: center;
+}
+
+.Dashboard_history > div:nth-child(2) > div:nth-child(2n){
+    background: #e5ecf46b;
+}
+
+.Dashboard_history p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Dashboard_history button{
+    background: transparent;
+    text-decoration: underline;
+    color: #FF0000;
+    font-size: 1rem;
+}
+
+
+/*==============================================*/
+
+
+@media only screen and (max-width: 768px){
+
+    .Dashboard{
+        width: 100%;
+        row-gap: 30px;
+    }
+    
+    .Dashboard > div{
+        border: none;
+    }
+    
+    .Dashboard_body{
+        padding: 25px 10px;
+    }
+    
+    .Dashboard_calc{
+        display: grid;
+        grid-template-areas:
+        "total total"
+        "egreso ingreso";
+        justify-items: center;
+        justify-content: stretch;
+        row-gap: 20px;
+        margin-bottom: 30px;
+        padding: 20px 0;
+    }
+    
+    .Dashboard_calc > span{
+        font-size: 1.5rem;
+    }
+
+    .Dashboard_calc > span:first-child{
+        grid-area: egreso;
+    }
+
+    .Dashboard_calc > span:last-child{
+        grid-area: ingreso;
+    }
+
+    .Dashboard_calc > div{
+        grid-area: total;
+    }
+    
+    .Dashboard_calc h2{
+        font-size: 2.5rem;
+    }
+    
+    .Dashboard_calc p{
+        margin-top: 13.5px;
+        color: #000;
+    }
+    
+    .Dashboard_buttons{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        border-radius: 0;
+        padding: 0;
+    }
+    
+    .Dashboard_buttons > button{
+        border-radius: 5px;
+        font-size: 1.050rem;
+        padding: 15px 30px;
+    }
+
+    .Dashboard_history .Dashboard_body{
+        padding: 0;
+    }
+    
+    .Dashboard_history > div:nth-child(2) > div{
+        padding: 20px 15px;
+        row-gap: 20px;
+        grid-template-areas:
+        "monto fecha"
+        "text text"
+        "btn btn";
+        grid-template-columns: auto;
+        align-items: center;
+    }
+
+    .Historial_card span:first-of-type{
+        grid-area: monto;
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    .Historial_card span:last-of-type{
+        grid-area: fecha;
+        font-size: 15px;
+        text-align: end;
+    }
+    
+    .Dashboard_history p{
+        grid-area: text;
+        white-space: normal;
+        font-size: 15px;
+    }
+    
+    .Dashboard_history button{
+        grid-area: btn;
+        background: #FF0000;
+        color: #fff;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-radius: .5rem;
+        width: fit-content;
+    }
+
+}

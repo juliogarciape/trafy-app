@@ -1,0 +1,144 @@
+.FormAdd{
+    width: 96%;
+    display: grid;
+    margin: auto;
+    grid-template-areas: "nombre nombre"
+    "precio stock"
+    "descripcion descripcion"
+    "categoria extra"
+    "files files"
+    "button button";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.FormAdd_nombre {grid-area: nombre;}
+.FormAdd_precio {grid-area: precio;}
+.FormAdd_categoria {grid-area: categoria;}
+.FormAdd_descripcion {grid-area: descripcion;}
+.FormAdd_stock {grid-area: stock;}
+.FormAdd_extra{grid-area: extra;}
+.FormAdd_btn{grid-area: button; margin-top: 7.5px;}
+
+.FormAdd input::placeholder{
+    color: rgb(167, 164, 164);
+}
+
+.FormAdd input{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px 0 #1f516e3d;
+    border: solid 1px #dad8d8a6;
+}
+
+.FormAdd input:required:valid{
+    border: solid 1px #0FE39F;
+}
+
+.FormAdd input[type="file"]:required:valid:after{
+    color: #0FE39F;
+}
+
+.FormAdd input[type="file"]:focus:invalid:after{
+    color: #FF0000;
+}
+
+.FormAdd input:focus:invalid{
+    border: solid 1px #FF0000;
+}
+
+.FormAdd_btn input{
+    background: var(--yellow-button);
+    border-radius: 2.5px;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+}
+
+.GoBack{
+    width: fit-content;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: #000;
+}
+
+.GoBack a{
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.GoBack img{
+    transform: rotateZ(180deg);
+    margin-right: 30px;
+}
+
+.GoBack span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* ==================================== */
+
+@media only screen and (max-width: 768px){
+
+    .FormAdd{
+        width: 100%;
+        grid-template-areas: "nombre nombre"
+        "precio precio"
+        "stock stock"
+        "descripcion descripcion"
+        "categoria categoria"
+        "extra extra"
+        "files files"
+        "button button";
+        column-gap: 0;
+        row-gap: 10px;
+    }
+
+    .FormAdd_btn { margin-top: 10px; }
+
+    .FormAdd input{
+        width: 94%;
+        display: block;
+        margin: auto;
+        padding: 15px 10px;
+        font-size: 15px;
+        border: solid 1.5px #ccc;
+    }
+
+    .FormAdd input:required:valid{
+        border: solid 1.5px #0FE39F;
+    }
+    
+    .FormAdd input:focus:invalid{
+        border: solid 1.5px #FF0000;
+    }
+    
+    .FormAdd_btn input{
+        padding: 15px;
+        font-size: 15px;
+        border: none;
+    }
+    
+    .GoBack a{
+        padding: 15px 30px;
+    }
+    
+    .GoBack img{
+        width: 30px;
+        margin-right: 15px;
+    }
+    
+    .GoBack span{
+        font-size: 1.050rem;
+    }
+}
